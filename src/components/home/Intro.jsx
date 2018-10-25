@@ -1,5 +1,6 @@
 import React from 'react';
 import {AppGlobals} from "../../utils/Globals";
+import SocialLinks from "../common/SocialLinks";
 
 const Intro = () => {
     return (
@@ -28,9 +29,7 @@ const Intro = () => {
             </div>
 
             <ul className="intro-social">
-                {AppGlobals.portfolio.socialLinks.map((item, key) =>
-                    <li><a key={key} href={item.url}><i className={item.faIcon}/></a></li>
-                )}
+               <SocialLinks/>
             </ul>
 
         </section>

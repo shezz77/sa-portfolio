@@ -1,5 +1,6 @@
 import React from 'react';
 import {AppGlobals} from "../../utils/Globals";
+import SocialLinks from "../common/SocialLinks";
 
 const Footer = () => {
     return (
@@ -9,9 +10,7 @@ const Footer = () => {
                 <div className="col-six tab-full pull-right social">
 
                     <ul className="footer-social">
-                        {AppGlobals.portfolio.socialLinks.map((item, key) =>
-                            <li><a key={key} href={item.url}><i className={item.faIcon}/></a></li>
-                        )}
+                        <SocialLinks/>
                     </ul>
 
                 </div>
