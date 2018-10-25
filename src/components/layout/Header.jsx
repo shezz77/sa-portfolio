@@ -1,14 +1,15 @@
 import React from 'react';
+// import {AppGlobals} from "../../utils/Globals";
 
 const Header = () => {
     return (
         <header>
             <div className="row">
                 <div className="top-bar">
-                    <a className="menu-toggle" href="#"><span>Menu</span></a>
-                    <div className="logo">
-                        <a href="/">KARDS</a>
-                    </div>
+                    {/*<a className="menu-toggle" href="#"><span>Menu</span></a>*/}
+                    {/*<div className="logo">*/}
+                        {/*<a href="/">{AppGlobals.portfolio.nickName}</a>*/}
+                    {/*</div>*/}
                     <nav id="main-nav-wrap">
                         <ul className="main-navigation">
                             <li className="current"><a className="smoothscroll"  href="#intro" title="">Home</a></li>

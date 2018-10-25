@@ -1,22 +1,23 @@
 import React from 'react';
+import {AppGlobals} from "../../utils/Globals";
 
 const Intro = () => {
     return (
         <section id="intro">
-
             <div className="intro-overlay"/>
-
             <div className="intro-content">
                 <div className="row">
 
                     <div className="col-twelve">
 
                         <h5>Hello, World.</h5>
-                        <h1>I'm Juan Dela Cruz.</h1>
+                        <h1>I'm {AppGlobals.portfolio.name}.</h1>
 
                         <p className="intro-position">
-                            <span>Front-end Developer</span>
-                            <span>UI/UX Designer</span>
+                            <span>{AppGlobals.portfolio.professional.title}</span>
+                            {AppGlobals.portfolio.professional.mainSkills.map((item, key) =>
+                                <span key={key}>{item}</span>
+                            )}
                         </p>
 
                         <a className="button stroke smoothscroll" href="#about" title="">More About Me</a>
@@ -27,11 +28,9 @@ const Intro = () => {
             </div>
 
             <ul className="intro-social">
-                <li><a href="#"><i className="fa fa-facebook"/></a></li>
-                <li><a href="#"><i className="fa fa-behance"/></a></li>
-                <li><a href="#"><i className="fa fa-twitter"/></a></li>
-                <li><a href="#"><i className="fa fa-dribbble"/></a></li>
-                <li><a href="#"><i className="fa fa-instagram"/></a></li>
+                {AppGlobals.portfolio.socialLinks.map((item, key) =>
+                    <li><a key={key} href={item.url}><i className={item.faIcon}/></a></li>
+                )}
             </ul>
 
         </section>

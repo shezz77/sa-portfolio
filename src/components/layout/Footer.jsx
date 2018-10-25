@@ -1,4 +1,5 @@
 import React from 'react';
+import {AppGlobals} from "../../utils/Globals";
 
 const Footer = () => {
     return (
@@ -8,19 +9,17 @@ const Footer = () => {
                 <div className="col-six tab-full pull-right social">
 
                     <ul className="footer-social">
-                        <li><a href="#"><i className="fa fa-facebook"/></a></li>
-                        <li><a href="#"><i className="fa fa-behance"/></a></li>
-                        <li><a href="#"><i className="fa fa-twitter"/></a></li>
-                        <li><a href="#"><i className="fa fa-dribbble"/></a></li>
-                        <li><a href="#"><i className="fa fa-instagram"/></a></li>
+                        {AppGlobals.portfolio.socialLinks.map((item, key) =>
+                            <li><a key={key} href={item.url}><i className={item.faIcon}/></a></li>
+                        )}
                     </ul>
 
                 </div>
 
                 <div className="col-six tab-full">
                     <div className="copyright">
-                        <span>© Copyright Kards 2016.</span>
-                        <span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>
+                        <span>© Copyright {AppGlobals.app.name} 2016.</span>
+                        <span><a href="#">Software Engineer</a></span>
                     </div>
                 </div>
 
