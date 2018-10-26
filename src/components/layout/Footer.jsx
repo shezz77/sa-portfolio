@@ -1,6 +1,7 @@
 import React from 'react';
 import {AppGlobals} from "../../utils/Globals";
 import SocialLinks from "../common/SocialLinks";
+import { goToTop } from 'react-scrollable-anchor';
 
 const Footer = () => {
     return (
@@ -23,7 +24,7 @@ const Footer = () => {
                 </div>
 
                 <div id="go-top">
-                    <a className="smoothscroll" title="Back to Top" href="#top"><i className="fa fa-long-arrow-up"/></a>
+                    <a className="smoothscroll" title="Back to Top" href="#intro-sec"><i className="fa fa-long-arrow-up"/></a>
                 </div>
 
             </div>

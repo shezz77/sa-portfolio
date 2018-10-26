@@ -24,16 +24,16 @@ const Contact = () => {
                         <fieldset>
 
                             <div className="form-field">
-                                <input name="contactName" type="text" id="contactName" placeholder="Name" value=""
+                                <input name="contactName" type="text" id="contactName" placeholder="Name" onChange={() => {}} value=""
                                        minLength="2" required=""/>
                             </div>
                             <div className="form-field">
-                                <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value=""
+                                <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" onChange={() => {}} value=""
                                        required=""/>
                             </div>
                             <div className="form-field">
                                 <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject"
-                                       value=""/>
+                                       onChange={() => {}} value=""/>
                             </div>
                             <div className="form-field">
                                 <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10"

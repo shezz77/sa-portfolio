@@ -143,6 +143,8 @@
    // toggle button
    toggleButton.on('click', function(e) {
 
+   	console.log('here');
+
 		e.preventDefault();
 		toggleButton.toggleClass('is-clicked');
 		nav.slideToggle();

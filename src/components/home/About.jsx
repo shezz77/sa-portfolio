@@ -5,7 +5,6 @@ import {AppGlobals} from "../../utils/Globals";
 const About = () => {
     return (
         <section id="about">
-
             <div className="row section-intro">
                 <div className="col-twelve">
 

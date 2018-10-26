@@ -21,7 +21,7 @@ const Intro = () => {
                             )}
                         </p>
 
-                        <a className="button stroke smoothscroll" href="#about" title="">More About Me</a>
+                        <a className="button stroke smoothscroll" href="#about-sec" title="">More About Me</a>
 
                     </div>
 
