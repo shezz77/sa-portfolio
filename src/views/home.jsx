@@ -10,6 +10,7 @@ import Stats from "../components/home/Stats";
 import Contact from "../components/home/Contact";
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor';
+import IntroV2 from "../components/home/Intro-v2";
 
 configureAnchors({scrollDuration: 1500});
 
@@ -18,7 +19,7 @@ const Home = () => {
         <Layout>
             <ScrollableAnchor id={'intro-sec'}>
                 <div>
-                    <Intro/>
+                    <IntroV2/>
                 </div>
             </ScrollableAnchor>
             <ScrollableAnchor id={'about-sec'}>

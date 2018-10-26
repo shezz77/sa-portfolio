@@ -82,6 +82,11 @@ export const AppGlobals = {
                 url: 'https://twitter.com/PkShehzada',
                 faIcon: 'fa fa-twitter'
             },
+            {
+                name: 'twitter',
+                url: 'https://twitter.com/PkShehzada',
+                faIcon: 'fa fa-github'
+            },
         ]
     }
 };
