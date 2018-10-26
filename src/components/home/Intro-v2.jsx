@@ -27,16 +27,9 @@ const IntroV2 = () => {
                                     </p>
 
                                     <a className="button stroke smoothscroll" href="#about-sec" title="">More About Me</a>
-
                                 </div>
-
-
-
                             </div>
                         </div>
-
-
-
                     </div>
                     <ul style={{textAlign: 'center'}} className="intro-social">
                         <SocialLinks/>
