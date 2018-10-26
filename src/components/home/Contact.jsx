@@ -1,4 +1,5 @@
 import React from 'react';
+import {AppGlobals} from "../../utils/Globals";
 
 const Contact = () => {
     return (
@@ -90,9 +91,13 @@ const Contact = () => {
                     </div>
 
                     <h5>Email Me At</h5>
-
-                    <p>someone@kardswebsite.com<br/>
-                        info@kardswebsite.com
+                    <p>
+                        {AppGlobals.portfolio.emails.map((item, key) =>
+                            <span key={key}>
+                            {item.address}
+                                <br/>
+                            </span>
+                        )}
                     </p>
 
                 </div>
@@ -105,9 +110,13 @@ const Contact = () => {
 
                     <h5>Call Me At</h5>
 
-                    <p>Phone: (+63) 555 1212<br/>
-                        Mobile: (+63) 555 0100<br/>
-                        Fax: (+63) 555 0101
+                    <p>
+                        {AppGlobals.portfolio.phone_numbers.map((item, key) =>
+                            <span key={key}>
+                            {item.phone}
+                                <br/>
+                            </span>
+                        )}
                     </p>
 
                 </div>

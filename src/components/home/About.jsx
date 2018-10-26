@@ -48,7 +48,7 @@ const About = () => {
                         <li>
                             <strong>Email:</strong>
                             {AppGlobals.portfolio.emails.map((item, key) =>
-                                <span key={key}>{item.address}</span>
+                                <span style={{marginTop: '10px'}} key={key}>{item.address}</span>
                             )}
                         </li>
 

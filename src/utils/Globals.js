@@ -24,6 +24,17 @@ export const AppGlobals = {
             },
         ],
 
+        phone_numbers: [
+            {
+                type: 'primary',
+                phone: '+92 300 9878282',
+            },
+            {
+                type: 'secondary',
+                phone: '+92 301 6608822',
+            }
+        ],
+
         job: {
             title: 'Senior Software Engineer',
             company: 'Powersoft19',
@@ -83,10 +94,10 @@ export const AppGlobals = {
                 faIcon: 'fa fa-twitter'
             },
             {
-                name: 'twitter',
-                url: 'https://twitter.com/PkShehzada',
+                name: 'github',
+                url: 'https://github.com/shehzada72',
                 faIcon: 'fa fa-github'
-            },
+            }
         ]
     }
 };

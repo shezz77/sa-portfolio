@@ -11,6 +11,7 @@ import mClouds from './../../assets/images/portfolio/modals/m-clouds.jpg';
 import mBeetle from './../../assets/images/portfolio/modals/m-beetle.jpg';
 import mLighthouse from './../../assets/images/portfolio/modals/m-lighthouse.jpg';
 import mSalad from './../../assets/images/portfolio/modals/m-salad.jpg';
+// import Coverflow from 'react-coverflow';
 
 const PortFolio = () => {
     return (
