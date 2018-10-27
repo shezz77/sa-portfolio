@@ -1,8 +1,7 @@
 import React from 'react';
 import profilePic from './../../assets/images/profile-pic.jpg';
-import {AppGlobals} from "../../utils/Globals";
 
-const About = () => {
+const About = props => {
     return (
         <section id="about">
             <div className="row section-intro">
@@ -15,7 +14,7 @@ const About = () => {
 
                         <img src={profilePic} alt="Profile Picture"/>
 
-                            <p className="lead">{AppGlobals.portfolio.description}</p>
+                            <p className="lead">{props.user.portfolio.description}</p>
                     </div>
 
                 </div>
@@ -31,23 +30,23 @@ const About = () => {
                     <ul className="info-list">
                         <li>
                             <strong>Fullname:</strong>
-                            <span>{AppGlobals.portfolio.name}</span>
+                            <span>{props.user.portfolio.name}</span>
                         </li>
                         <li>
                             <strong>Job:</strong>
-                            <span>{AppGlobals.portfolio.job.title}</span>
+                            <span>{props.user.portfolio.job.title}</span>
                         </li>
                         <li>
                             <strong>Company:</strong>
-                            <span>{AppGlobals.portfolio.job.company}</span>
+                            <span>{props.user.portfolio.job.company}</span>
                         </li>
                         <li>
                             <strong>Website:</strong>
-                            <span>{AppGlobals.portfolio.job.website}</span>
+                            <span>{props.user.portfolio.job.website}</span>
                         </li>
                         <li>
                             <strong>Email:</strong>
-                            {AppGlobals.portfolio.emails.map((item, key) =>
+                            {props.user.portfolio.emails.map((item, key) =>
                                 <span style={{marginTop: '10px'}} key={key}>{item.address}</span>
                             )}
                         </li>
@@ -62,7 +61,7 @@ const About = () => {
                     <p></p>
 
                     <ul className="skill-bars">
-                        {AppGlobals.portfolio.skills.map((item, key) =>
+                        {props.user.portfolio.skills.map((item, key) =>
                             <li key={key}>
                                 <div className={`progress percent${item.levelInPercent}`}><span>{item.levelInPercent}%</span></div>
                                 <strong>{item.name}</strong>

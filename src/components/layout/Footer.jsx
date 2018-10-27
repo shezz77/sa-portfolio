@@ -1,9 +1,7 @@
 import React from 'react';
-import {AppGlobals} from "../../utils/Globals";
 import SocialLinks from "../common/SocialLinks";
-import { goToTop } from 'react-scrollable-anchor';
 
-const Footer = () => {
+const Footer = props => {
     return (
         <footer>
             <div className="row">
@@ -18,7 +16,7 @@ const Footer = () => {
 
                 <div className="col-six tab-full">
                     <div className="copyright">
-                        <span>© Copyright {AppGlobals.app.name} 2016.</span>
+                        <span>© Copyright {props.user.app.name} 2016.</span>
                         <span><a href="#">Software Engineer</a></span>
                     </div>
                 </div>

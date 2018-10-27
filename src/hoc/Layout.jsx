@@ -6,12 +6,12 @@ import Loader from './../components/layout/Loader';
 const Layout = props => {
     return (
         <div>
-            <Header/>
+            <Header {...props}/>
 
             {props.children}
 
-            <Footer/>
-            <Loader/>
+            <Footer {...props}/>
+            <Loader {...props}/>
         </div>
     );
 };

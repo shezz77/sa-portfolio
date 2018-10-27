@@ -1675,7 +1675,7 @@ header .logo a {
 
 #resume .timeline-header {
 	float: left;
-	width: 35%;
+	width: 40%;
 	padding-right: 90px;
 	text-align: right;
 }
@@ -1714,6 +1714,7 @@ header .logo a {
 @media only screen and (max-width:1024px) {
 	#resume .timeline-header {
 		padding-right: 50px;
+		width: 38%;
 	}
 	#resume .timeline-header h3 {
 		font-size: 1.8rem;

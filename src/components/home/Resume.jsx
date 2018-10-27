@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Resume = () => {
+const Resume = props => {
     return (
         <section id="resume" className="grey-section">
 
@@ -10,8 +10,8 @@ const Resume = () => {
                     <h5>Resume</h5>
                     <h1>More of my credentials.</h1>
 
-                    <p className="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore
-                        officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+                    {/*<p className="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore*/}
+                        {/*officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>*/}
 
                 </div>
             </div>
@@ -27,69 +27,31 @@ const Resume = () => {
                 <div className="col-twelve">
 
                     <div className="timeline-wrap">
+                        {props.user.portfolio.experience.length > 0 ?
+                            props.user.portfolio.experience.map((item, key) =>
+                            <div key={key} className="timeline-block">
 
-                        <div className="timeline-block">
+                                <div className="timeline-ico">
+                                    <i className="fa fa-graduation-cap"/>
+                                </div>
 
-                            <div className="timeline-ico">
-                                <i className="fa fa-graduation-cap"/>
+                                <div className="timeline-header">
+                                    <h3>{item.designation}</h3>
+                                    <p>{item.start} - {item.end}</p>
+                                </div>
+
+                                <div className="timeline-content">
+                                    <h4>{item.company.name}</h4>
+                                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi
+                                        cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident
+                                        cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est
+                                        occaecat nisi.</p>
+                                </div>
+
                             </div>
+                        ) : null}
 
-                            <div className="timeline-header">
-                                <h3>UI Designer</h3>
-                                <p>July 2015 - Present</p>
-                            </div>
 
-                            <div className="timeline-content">
-                                <h4>Awesome Studio</h4>
-                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi
-                                    cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident
-                                    cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est
-                                    occaecat nisi.</p>
-                            </div>
-
-                        </div>
-
-                        <div className="timeline-block">
-
-                            <div className="timeline-ico">
-                                <i className="fa fa-graduation-cap"/>
-                            </div>
-
-                            <div className="timeline-header">
-                                <h3>Front-end Developer</h3>
-                                <p>July 2014 - June 2015</p>
-                            </div>
-
-                            <div className="timeline-content">
-                                <h4>Super Cool Agency</h4>
-                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi
-                                    cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident
-                                    cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est
-                                    occaecat nisi incididunt.</p>
-                            </div>
-
-                        </div>
-
-                        <div className="timeline-block">
-
-                            <div className="timeline-ico">
-                                <i className="fa fa-graduation-cap"/>
-                            </div>
-
-                            <div className="timeline-header">
-                                <h3>Web Designer</h3>
-                                <p>May 2013 - June 2014</p>
-                            </div>
-
-                            <div className="timeline-content">
-                                <h4>Great Designs Studio</h4>
-                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi
-                                    cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident
-                                    cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est
-                                    occaecat nisi incididunt.</p>
-                            </div>
-
-                        </div>
 
                     </div>
 

@@ -1,8 +1,7 @@
 import React from 'react';
-import {AppGlobals} from "../../utils/Globals";
 import SocialLinks from "../common/SocialLinks";
 
-const IntroV2 = () => {
+const IntroV2 = props => {
     return (
         <div className="container demo-1">
             <div className="content">
@@ -17,11 +16,11 @@ const IntroV2 = () => {
                                 <div className="col-twelve">
 
                                     <h5>Hello, World.</h5>
-                                    <h2 style={{ color: 'white' }}>I'm {AppGlobals.portfolio.name}.</h2>
+                                    <h2 style={{ color: 'white' }}>I'm {props.user.portfolio.name}.</h2>
 
                                     <p className="intro-position">
-                                        <span>{AppGlobals.portfolio.professional.title}</span>
-                                        {AppGlobals.portfolio.professional.mainSkills.map((item, key) =>
+                                        <span>{props.user.portfolio.professional.title}</span>
+                                        {props.user.portfolio.professional.mainSkills.map((item, key) =>
                                             <span key={key}>{item}</span>
                                         )}
                                     </p>

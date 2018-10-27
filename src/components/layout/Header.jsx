@@ -1,7 +1,6 @@
 import React from 'react';
-import {AppGlobals} from "../../utils/Globals";
 
-const Header = () => {
+const Header = props => {
     const handleMenu = e => {
         e.preventDefault();
 
@@ -18,16 +17,17 @@ const Header = () => {
                 <div className="top-bar">
                     <a onClick={handleMenu} className="menu-toggle" href="#"><span>Menu</span></a>
                     <div className="logo">
-                        <a href="/">{AppGlobals.portfolio.nickName}</a>
+                        <a href="/">{props.user.portfolio.nickName}</a>
                     </div>
                     <nav id="main-nav-wrap">
                         <ul className="main-navigation">
-                            <li className="current"><a className="smoothscroll"  href="#intro-sec" title="">Home</a></li>
-                            <li><a className="smoothscroll"  href="#about-sec" title="">About</a></li>
-                            <li><a className="smoothscroll"  href="#resume-sec" title="">Resume</a></li>
-                            <li><a className="smoothscroll"  href="#portfolio-sec" title="">Portfolio</a></li>
-                            <li><a className="smoothscroll"  href="#services-sec" title="">Services</a></li>
-                            <li><a className="smoothscroll"  href="#contact-sec" title="">Contact</a></li>
+                            {props.user.mainMenu.length > 0 ?
+                                props.user.mainMenu.map((item, key) =>
+                                    <li key={key} className={props.bookmark === item.href ? 'current' : ''}>
+                                        <a className="smoothscroll"  href={`#${item.href}`} title="">{item.title}</a>
+                                    </li>
+                                ): null
+                            }
                             {/*<li><a href="styles.html" title="">Style Demo</a></li>*/}
                         </ul>
                     </nav>
