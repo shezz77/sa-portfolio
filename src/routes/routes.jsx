@@ -1,4 +1,3 @@
-
 import Home from '../views/home';
 
 const appRoutes = [
@@ -11,6 +10,7 @@ const appRoutes = [
         redirect: true,
         path: "*",
         to: "/",
+        component: Home
     }
 ];
 

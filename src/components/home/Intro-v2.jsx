@@ -16,11 +16,11 @@ const IntroV2 = props => {
                                 <div className="col-twelve">
 
                                     <h5>Hello, World.</h5>
-                                    <h2 style={{ color: 'white' }}>I'm {props.user.portfolio.name}.</h2>
+                                    <h2 style={{ color: 'white' }}>I'm {props.user.name}.</h2>
 
                                     <p className="intro-position">
-                                        <span>{props.user.portfolio.professional.title}</span>
-                                        {props.user.portfolio.professional.mainSkills.map((item, key) =>
+                                        <span>{props.user.professional.title}</span>
+                                        {props.user.professional.mainSkills.map((item, key) =>
                                             <span key={key}>{item}</span>
                                         )}
                                     </p>

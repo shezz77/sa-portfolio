@@ -12,9 +12,9 @@ const About = props => {
 
                     <div className="intro-info">
 
-                        <img src={profilePic} alt="Profile Picture"/>
+                        <img src={profilePic} alt=""/>
 
-                            <p className="lead">{props.user.portfolio.description}</p>
+                            <p className="lead">{props.user.description}</p>
                     </div>
 
                 </div>
@@ -30,23 +30,23 @@ const About = props => {
                     <ul className="info-list">
                         <li>
                             <strong>Fullname:</strong>
-                            <span>{props.user.portfolio.name}</span>
+                            <span>{props.user.name}</span>
                         </li>
                         <li>
                             <strong>Job:</strong>
-                            <span>{props.user.portfolio.job.title}</span>
+                            <span>{props.user.job.title}</span>
                         </li>
                         <li>
                             <strong>Company:</strong>
-                            <span>{props.user.portfolio.job.company}</span>
+                            <span>{props.user.job.company}</span>
                         </li>
                         <li>
                             <strong>Website:</strong>
-                            <span>{props.user.portfolio.job.website}</span>
+                            <span>{props.user.job.website}</span>
                         </li>
                         <li>
                             <strong>Email:</strong>
-                            {props.user.portfolio.emails.map((item, key) =>
+                            {props.user.emails.map((item, key) =>
                                 <span style={{marginTop: '10px'}} key={key}>{item.address}</span>
                             )}
                         </li>
@@ -61,7 +61,7 @@ const About = props => {
                     <p></p>
 
                     <ul className="skill-bars">
-                        {props.user.portfolio.skills.map((item, key) =>
+                        {props.user.skills.map((item, key) =>
                             <li key={key}>
                                 <div className={`progress percent${item.levelInPercent}`}><span>{item.levelInPercent}%</span></div>
                                 <strong>{item.name}</strong>
@@ -78,7 +78,7 @@ const About = props => {
             <div className="row button-section">
                 <div className="col-twelve">
                     <a href="#contact" title="Hire Me" className="button stroke smoothscroll">Hire Me</a>
-                    <a href="#" title="Download CV" className="button button-primary">Download CV</a>
+                    <a href="#/" title="Download CV" className="button button-primary">Download CV</a>
                 </div>
             </div>
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import {AppGlobals} from "../../utils/Globals";
 
 const Header = props => {
     const handleMenu = e => {
@@ -15,14 +16,14 @@ const Header = props => {
         <header>
             <div className="row">
                 <div className="top-bar">
-                    <a onClick={handleMenu} className="menu-toggle" href="#"><span>Menu</span></a>
+                    <a onClick={handleMenu} className="menu-toggle" href="#/"><span>Menu</span></a>
                     <div className="logo">
-                        <a href="/">{props.user.portfolio.nickName}</a>
+                        {/*<a href="/">{props.user.portfolio.nickName}</a>*/}
                     </div>
                     <nav id="main-nav-wrap">
                         <ul className="main-navigation">
-                            {props.user.mainMenu.length > 0 ?
-                                props.user.mainMenu.map((item, key) =>
+                            {AppGlobals.mainMenu.length > 0 ?
+                                AppGlobals.mainMenu.map((item, key) =>
                                     <li key={key} className={props.bookmark === item.href ? 'current' : ''}>
                                         <a className="smoothscroll"  href={`#${item.href}`} title="">{item.title}</a>
                                     </li>

@@ -27,8 +27,8 @@ const Resume = props => {
                 <div className="col-twelve">
 
                     <div className="timeline-wrap">
-                        {props.user.portfolio.experience.length > 0 ?
-                            props.user.portfolio.experience.map((item, key) =>
+                        {props.user.experience.length > 0 ?
+                            props.user.experience.map((item, key) =>
                             <div key={key} className="timeline-block">
 
                                 <div className="timeline-ico">

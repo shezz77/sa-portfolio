@@ -1,7 +1,8 @@
 import React from 'react';
 import SocialLinks from "../common/SocialLinks";
+import {AppGlobals} from "../../utils/Globals";
 
-const Footer = props => {
+const Footer = () => {
     return (
         <footer>
             <div className="row">
@@ -16,8 +17,8 @@ const Footer = props => {
 
                 <div className="col-six tab-full">
                     <div className="copyright">
-                        <span>© Copyright {props.user.app.name} 2016.</span>
-                        <span><a href="#">Software Engineer</a></span>
+                        <span>© Copyright {AppGlobals.app.name} 2016.</span>
+                        <span><a href="#/">Software Engineer</a></span>
                     </div>
                 </div>
 
