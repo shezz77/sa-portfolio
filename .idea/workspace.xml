@@ -2,30 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53bcfd0c-362c-4547-8915-cc66e3a9f2e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actionTypes/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actionTypes/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/user_reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/SA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/SA.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/About.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/About.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Intro-v2.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Intro-v2.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/PortFolio.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/PortFolio.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/Resume.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Resume.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/routes.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/home.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +31,7 @@
           <entry key="js" value="3007" />
           <entry key="json" value="63" />
           <entry key="jsx" value="2855" />
-          <entry key="txt" value="237" />
+          <entry key="txt" value="273" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -62,7 +41,7 @@
           <entry key="JSON" value="63" />
           <entry key="JSX Harmony" value="2855" />
           <entry key="JavaScript" value="3007" />
-          <entry key="PLAIN_TEXT" value="237" />
+          <entry key="PLAIN_TEXT" value="273" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -108,8 +87,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+            <state relative-caret-position="119">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -255,24 +237,6 @@
               <item name="sa-portfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="sa-portfolio" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sa-portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sa-portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sa-portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sa-portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="reducers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sa-portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sa-portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -352,7 +316,7 @@
       <workItem from="1540540866440" duration="7972000" />
       <workItem from="1540553232310" duration="651000" />
       <workItem from="1540566301605" duration="4291000" />
-      <workItem from="1540576331265" duration="33501000" />
+      <workItem from="1540576331265" duration="34209000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1540414952408</created>
@@ -452,16 +416,30 @@
       <option name="project" value="LOCAL" />
       <updated>1540668588709</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="All project converted to redux">
+      <created>1540755568057</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1540755568057</updated>
+    </task>
+    <task id="LOCAL-00016" summary="All project converted to redux">
+      <created>1540755583720</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1540755583720</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61353000" />
+    <option name="totallyTimeSpent" value="62061000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2291498" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2291498" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" />
@@ -475,7 +453,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.34341636" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.5569395" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -505,7 +483,8 @@
     <MESSAGE value="Working on loader now" />
     <MESSAGE value="updated" />
     <MESSAGE value="Resume section updated and menu bug fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Resume section updated and menu bug fixed" />
+    <MESSAGE value="All project converted to redux" />
+    <option name="LAST_COMMIT_MESSAGE" value="All project converted to redux" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/layout/Head.jsx" />
@@ -835,8 +814,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        <state relative-caret-position="119">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
