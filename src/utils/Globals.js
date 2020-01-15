@@ -122,6 +122,7 @@ export const AppGlobals = {
                 startDate: '02-sep-2018'
             },
         ],
+
         professional: {
             title: 'Software Engineer',
             mainSkills: ['ReactJS', 'Laravel', 'NodeJS']

@@ -1,10 +1,13 @@
 import React from 'react';
+import {withRouter} from 'react-router-dom';
 
-const Privacy = () => {
+const Privacy = (props) => {
+    const {appName} = props.match.params;
+
     return (
         <div style={{backgroundColor: 'white', fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif', padding:'1em', lineHeight: 'normal', color: '#151515'}}>
             <h2>Privacy Policy</h2> <p>
-            Shehzad Aslam built the SA 4k Video Player app as
+            Shehzad Aslam built the {appName} app as
             an Ad Supported app. This SERVICE is provided by
             Shehzad Aslam at no cost and is intended for
             use as is.
@@ -24,7 +27,7 @@ const Privacy = () => {
         </p> <p>
             The terms used in this Privacy Policy have the same meanings
             as in our Terms and Conditions, which is accessible at
-            SA 4k Video Player unless otherwise defined in this Privacy
+            {appName} unless otherwise defined in this Privacy
             Policy.
         </p> <p><strong>Information Collection and Use</strong></p> <p>
             For a better experience, while using our Service,
@@ -117,4 +120,4 @@ const Privacy = () => {
     );
 };
 
-export default Privacy;
+export default withRouter(Privacy);

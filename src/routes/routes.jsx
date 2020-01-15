@@ -1,5 +1,6 @@
 import Home from '../views/home';
 import Privacy from '../views/privacy';
+import DynamicPrivacy from '../views/dynamic-privacy';
 
 const appRoutes = [
     {
@@ -11,6 +12,11 @@ const appRoutes = [
         path: "/privacy",
         title: "SA 4k privacy",
         component: Privacy
+    },
+    {
+        path: "/privacy/:appName",
+        title: "Dynamic privacy",
+        component: DynamicPrivacy
     },
     {
         redirect: true,
